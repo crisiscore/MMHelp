@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.imei.mmhelp.view.pods.BeforeLoginViewPod xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="250dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_header" />
+
+    <org.mmtextview.components.MMButton
+        android:id="@+id/btnRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="@dimen/margin_medium_2"
+        android:background="@color/colorAccent"
+        android:paddingEnd="@dimen/margin_medium"
+        android:paddingStart="@dimen/margin_medium"
+        android:text="Register လုပ်ရန်"
+        android:textColor="@android:color/white" />
+
+    <org.mmtextview.components.MMButton
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnRegister"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/margin_medium_2"
+        android:background="@color/colorAccent"
+        android:paddingEnd="@dimen/margin_medium"
+        android:paddingStart="@dimen/margin_medium"
+        android:text="Login ၀င်ရန်"
+        android:textColor="@android:color/white" />
+
+</com.imei.mmhelp.view.pods.BeforeLoginViewPod>
