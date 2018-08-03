@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="@dimen/margin_medium_2"
+    android:layout_marginStart="@dimen/margin_medium_2"
+    android:layout_marginTop="@dimen/margin_medium_2">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_medium_2">
+
+        <org.mmtextview.components.MMTextView
+            android:id="@+id/tvJobTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dummy_title"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/text_regular_3x" />
+
+        <org.mmtextview.components.MMTextView
+            android:id="@+id/tvJobFare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tvJobTitle"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/tvJobTitle"
+            android:textAlignment="textEnd"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/text_regular_2x"
+            tools:text="@string/dummy_price" />
+
+        <org.mmtextview.components.MMTextView
+            android:id="@+id/tvsDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvJobTitle"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:textColor="@color/primarayText"
+            android:textSize="@dimen/text_regular"
+            tools:text="@string/dummy_title" />
+
+        <org.mmtextview.components.MMTextView
+            android:id="@+id/tvJobLocation"
+            android:layout_width="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/margin_medium"
+            android:layout_below="@+id/tvsDescription"
+            android:layout_marginTop="@dimen/text_regular"
+            android:textColor="@color/secondaryText"
+            android:drawableStart="@drawable/ic_map_black_24dp"
+            android:textSize="@dimen/text_regular"
+            tools:text="@string/dummy_location" />
+
+        <org.mmtextview.components.MMTextView
+            android:id="@+id/tvJobApplied"
+            android:drawableStart="@drawable/ic_date_range_black_24dp"
+            android:layout_width="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/margin_medium"
+            android:layout_below="@+id/tvsDescription"
+            android:layout_toEndOf="@+id/tvJobLocation"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:layout_marginTop="@dimen/text_regular"
+            android:textColor="@color/secondaryText"
+            android:textSize="@dimen/text_regular"
+            tools:text="@string/dummy_location" />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

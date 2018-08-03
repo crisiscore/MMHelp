@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MMHelp</string>
+    <string name="dummy_title">Housekeeping Service</string>
+    <string name="dummy_price">3000 ks</string>
+    <string name="dummy_location">Yankin</string>
+    <string name="dummy_error">Check your internet connection</string>
+</resources>
