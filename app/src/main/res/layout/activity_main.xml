@@ -21,9 +21,9 @@
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"
                 android:layout_height="?actionBarSize"
+                android:background="@color/colorPrimaryDark"
                 app:popupTheme="@style/AppTheme.PopupOverlay"
-                app:title="MM Jobs"
-                app:titleTextColor="@color/colorPrimaryDark" />
+                app:title="MM Jobs" />
 
         </android.support.design.widget.AppBarLayout>
 

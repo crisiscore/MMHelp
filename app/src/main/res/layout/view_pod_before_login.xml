@@ -5,9 +5,11 @@
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scaleType="centerCrop"
-        android:src="@drawable/bg_header" />
+        android:layout_height="300dp"
+        android:background="@color/backgroundColor"
+        android:contentDescription="@string/action_settings"
+        android:scaleType="fitCenter"
+        android:src="@drawable/job_details" />
 
     <org.mmtextview.components.MMButton
         android:id="@+id/btnRegister"
@@ -16,9 +18,9 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
         android:layout_margin="@dimen/margin_medium_2"
-        android:background="@color/colorAccent"
-        android:paddingEnd="@dimen/margin_medium"
-        android:paddingStart="@dimen/margin_medium"
+        android:background="@drawable/login_bg"
+        android:paddingEnd="@dimen/margin_medium_2"
+        android:paddingStart="@dimen/margin_medium_2"
         android:text="Register လုပ်ရန်"
         android:textColor="@android:color/white" />
 
@@ -26,12 +28,11 @@
         android:id="@+id/btnLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/btnRegister"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="@dimen/margin_medium_2"
-        android:background="@color/colorAccent"
-        android:paddingEnd="@dimen/margin_medium"
-        android:paddingStart="@dimen/margin_medium"
+        android:layout_toStartOf="@+id/btnRegister"
+        android:layout_alignBottom="@+id/btnRegister"
+        android:background="@drawable/login_bg"
+        android:paddingEnd="@dimen/margin_medium_2"
+        android:paddingStart="@dimen/margin_medium_2"
         android:text="Login ၀င်ရန်"
         android:textColor="@android:color/white" />
 

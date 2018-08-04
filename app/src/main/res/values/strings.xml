@@ -4,4 +4,15 @@
     <string name="dummy_price">3000 ks</string>
     <string name="dummy_location">Yankin</string>
     <string name="dummy_error">Check your internet connection</string>
+    <string name="login">Login</string>
+    <string name="enter_username">Enter username</string>
+    <string name="enter_password">Enter password</string>
+    <string name="submit">Submit</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="register">Register</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="already_account">Already have an account? Login</string>
+    <string name="details">Job Details</string>
+    <string name="apply_now">Apply Now</string>
+    <string name="job_duration">Job Information</string>
 </resources>

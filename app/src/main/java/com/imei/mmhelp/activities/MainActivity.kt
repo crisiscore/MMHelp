@@ -24,7 +24,7 @@ import org.greenrobot.eventbus.Subscribe
 import org.greenrobot.eventbus.ThreadMode
 import org.mmtextview.MMFontUtils
 
-class MainActivity : BaseActivity(), JobDelegate , AccountDelegate{
+class MainActivity : BaseActivity(), JobDelegate, AccountDelegate {
 
     private var adapter: JobsAdapter? = null
 
@@ -154,19 +154,19 @@ class MainActivity : BaseActivity(), JobDelegate , AccountDelegate{
 
     override fun onClick(jobId: Int) {
         val intent = Intent(applicationContext, JobDetailsActivity::class.java)
-        intent.putExtra("job_id", jobId)
+        intent.putExtra(JobDetailsActivity.JOB_ID, jobId)
         startActivity(intent)
     }
 
     override fun onLogin() {
-        val intent = Intent(applicationContext , AccountActivity::class.java)
-        intent.putExtra(AccountActivity.ACTION_TYPE , AccountActivity.ACTION_TYPE_LOGIN)
+        val intent = Intent(applicationContext, AccountActivity::class.java)
+        intent.putExtra(AccountActivity.ACTION_TYPE, AccountActivity.ACTION_TYPE_LOGIN)
         startActivity(intent)
     }
 
     override fun onRegister() {
-        val intent = Intent(applicationContext , AccountActivity::class.java)
-        intent.putExtra(AccountActivity.ACTION_TYPE , AccountActivity.ACTION_TYPE_REGISTER)
+        val intent = Intent(applicationContext, AccountActivity::class.java)
+        intent.putExtra(AccountActivity.ACTION_TYPE, AccountActivity.ACTION_TYPE_REGISTER)
         startActivity(intent)
     }
 

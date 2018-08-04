@@ -1,5 +1,100 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
-</RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/ivHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/dummy_title"
+            android:scaleType="fitCenter"
+            android:background="@color/backgroundColor"
+            android:src="@drawable/job_details" />
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ivHeader"
+            android:layout_marginBottom="@dimen/margin_large"
+            android:layout_marginEnd="@dimen/margin_large"
+            android:layout_marginStart="@dimen/margin_large"
+            android:layout_marginTop="-28dp"
+            app:cardBackgroundColor="@color/colorPrimary"
+            app:cardCornerRadius="@dimen/margin_medium"
+            app:cardElevation="@dimen/margin_medium_2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingEnd="@dimen/margin_medium"
+                android:paddingStart="@dimen/margin_medium">
+
+                <org.mmtextview.components.MMTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/margin_medium_2"
+                    android:layout_marginTop="@dimen/margin_large"
+                    android:text="@string/login"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/text_heading_1x"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_medium_2"
+                    android:backgroundTint="@color/colorPrimaryDark"
+                    android:hint="@string/enter_username"
+                    android:inputType="text"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textColorHint="@color/primarayText"
+                    android:textSize="@dimen/text_regular_2x" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_medium_2"
+                    android:backgroundTint="@color/colorPrimaryDark"
+                    android:hint="@string/enter_password"
+                    android:inputType="text"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textColorHint="@color/primarayText"
+                    android:textSize="@dimen/text_regular_2x" />
+
+                <org.mmtextview.components.MMButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_large"
+                    android:layout_marginEnd="@dimen/margin_medium_2"
+                    android:layout_marginStart="@dimen/margin_medium_2"
+                    android:layout_marginTop="@dimen/margin_medium_2"
+                    android:backgroundTint="@color/colorPrimaryDark"
+                    android:text="@string/submit"
+                    android:textColor="@color/colorPrimary" />
+
+                <org.mmtextview.components.MMTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/margin_large"
+                    android:text="@string/forgot_password"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/text_regular_2x" />
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+</ScrollView>
